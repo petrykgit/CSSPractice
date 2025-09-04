@@ -1,7 +1,54 @@
 body {
   margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-.person__photoimg {
+.person {
+  height: 231px;
+  width: 200px;
+
+  &__photo {
+    position: relative;
+  }
+
+  &__photoimg {
   border-radius: 50%;
+  width: 200px;
 }
+
+  &___details {
+    height: 31px;
+
+  }
+
+  &__name {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #2F4F4F;
+  }
+
+  &__rank {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;                text-align: center;
+
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #8B0000;
+
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+
+}
+}
+
