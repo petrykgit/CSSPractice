@@ -4,7 +4,24 @@ body {
   box-sizing: border-box;
 }
 
+.people {
+  display: grid;
+  --columns: 2;
+  grid-template-columns: repeat(var(--columns), 200px);
+  justify-content: center;
+  gap: 40px 30px;
+  padding-top: 30px;
+
+  @media (min-width: 1000px){
+
+    --columns: 4;
+  
+  }
+
+}
+
 .person {
+  
   height: 231px;
   width: 200px;
 
@@ -17,9 +34,10 @@ body {
   width: 200px;
 }
 
-  &___details {
+  &__details {
     height: 31px;
-
+    width: 100%;
+    text-align: center;
   }
 
   &__name {
@@ -27,6 +45,8 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
+
+
 
     color: #2F4F4F;
   }
@@ -50,5 +70,9 @@ body {
   transform: translateY(-50%);
 
 }
+
+  &__extra {
+    display: none;
+  }
 }
 
