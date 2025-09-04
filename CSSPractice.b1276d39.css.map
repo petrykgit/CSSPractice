@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAIA","sources":["main.scss"],"sourcesContent":["body {\n  margin: 0;\n}\n\n.person__photoimg {\n  border-radius: 50%;\n}\n"],"names":[],"version":3,"file":"CSSPractice.b1276d39.css.map","sourceRoot":"/__parcel_source_root/"}
