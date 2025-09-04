@@ -22,9 +22,12 @@ body {
 .person {
   width: 200px;
   height: 231px;
+  position: relative;
+  overflow: visible;
 }
 
 .person__photo {
+  height: 200px;
   position: relative;
 }
 
@@ -41,7 +44,6 @@ body {
 
 .person__name {
   color: #2f4f4f;
-  font-family: Arial;
   font-size: 20px;
   font-weight: 700;
   line-height: 23px;
@@ -60,11 +62,27 @@ body {
   display: inline-block;
   position: absolute;
   top: 50%;
-  right: 10px;
+  left: 158px;
   transform: translateY(-50%);
 }
 
 .person__extra {
   display: none;
+}
+
+.person__sport {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.person:hover {
+  z-index: 2;
+  background-color: #eee;
+  transform: scale(1.1, 1.24);
+}
+
+.person:hover .person__extra {
+  display: block;
 }
 /*# sourceMappingURL=CSSPractice.b1276d39.css.map */
